@@ -2,68 +2,82 @@ import styled from 'styled-components'
 
 
 const Styles = styled.div`
-  width: 270px;
-  padding: 10px;
-  display: block;
-  margin: 20px auto;
-  background-color: #000;
+    width: 270px;
+    padding: 10px;
+    display: block;
+    margin: 20px auto;
+    background-color: #000;
 
-  @media (max-width: 450px) {
-    width: 100%;
-    height: 104vh;
-    margin: 0;
-
-  .display{
-      height: 20vh;
-      
-      div {
-          padding-top: 10vh;
-      }
-  }
-  
-  .calcForm {
-      width: 100%;
-      height: 80vh;
-
-      button {
-          width: 100%;
-          height: 100vh;
-      }
-
-  }
-}
-  
-  .display {
-    width: 100%;
-    padding: 0 10px 10px 0;
-        
-    div {
-        height: 100%;
-        font-size: 60px;
-        text-align: right;
-        color: #fff;
+    @media (max-width: 450px) {
+        width: 100%;
+        height: 104vh;
+        margin: 0;
     }
-  }
+  
+    .back-btn {
+        text-align: right;
 
-  .calcForm {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 1fr;
-    grid-gap: 10px;
+        svg {
+            color: #696969;
+            font-size: 35px;
 
-    button {
-        border: none;
-        padding: 10px;
-        height: 100%;
-        border-radius: 50%;
-        font-size: 28px;
-        color: #fff;
-
-        &:focus {
-            outline: none;
+            &:hover {
+                color: #808080;
+            }
         }
     }
+
+    .display {
+        width: 100%;
+        padding: 0 10px 10px 0;
+            
+        div {
+            height: 100%;
+            font-size: 60px;
+            text-align: right;
+            color: #fff;
+        }
+
+        @media (max-width: 450px) {
+            height: 15vh;
+
+            div {
+                font-size: 80px
+            }
+
+        }
+    }
+
+    .calcForm {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 1fr;
+        grid-gap: 10px;
+
+        @media (max-width: 450px) {
+            width: 100%;
+            height: 79vh;
+        }
+
+        button {
+            border: none;
+            padding: 10px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 28px;
+            color: #fff;
+
+            &:focus {
+                outline: none;
+            }
+            
+            @media (max-width: 450px) {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
 
     .item-0 {
         grid-column: 1/ span 2;
@@ -86,7 +100,8 @@ const Styles = styled.div`
         background-color: #ff8800;
 
         &:hover {
-            background-color: #ffa238;
+            background-color: #fffcf3;
+            color: #ff8800;
         }
     }
 
@@ -94,7 +109,8 @@ const Styles = styled.div`
         background-color: #adadad;
 
         &:hover {
-            background-color: #c7c7c7
+            background-color: #c7c7c7;
+            color: #000;
         }
     }
   }
