@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Calculator from "./styles/Style";
+import { Calculator } from "./styles/Style";
 import PadBody from "./PadBody";
 import DisplayBody from "./DisplayBody";
 import BackBtn from "./BackBtn";

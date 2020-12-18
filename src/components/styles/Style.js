@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 
-const Styles = styled.div`
+export const Calculator = styled.div`
     width: 270px;
     padding: 10px;
     display: block;
@@ -13,52 +13,19 @@ const Styles = styled.div`
         height: 104vh;
         margin: 0;
     }
-  
-    .back-btn {
-        text-align: right;
+`
 
-        svg {
-            color: #696969;
-            font-size: 35px;
+export const PadStyle = styled.div `
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
 
-            &:hover {
-                color: #808080;
-            }
-        }
+    @media (max-width: 450px) {
+        width: 95%;
+        height: 75vh;
     }
-
-    .display {
-        width: 100%;
-        padding: 0 10px 10px 0;
-            
-        div {
-            height: 100%;
-            font-size: 60px;
-            text-align: right;
-            color: #fff;
-        }
-
-        @media (max-width: 450px) {
-            height: 15vh;
-
-            div {
-                font-size: 80px
-            }
-
-        }
-    }
-
-    .calcForm {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: 1fr;
-        grid-gap: 10px;
-
-        @media (max-width: 450px) {
-            width: 100%;
-            height: 79vh;
-        }
 
         button {
             border: none;
@@ -113,8 +80,43 @@ const Styles = styled.div`
             color: #000;
         }
     }
-  }
-
 `
 
-export default Styles
+
+export const Display = styled.div `
+    width: 100%;
+    padding: 0 10px 10px 0;
+        
+    div {
+        height: 100%;
+        font-size: 60px;
+        text-align: right;
+        color: #fff;
+    }
+
+    @media (max-width: 450px) {
+        height: 15vh;
+        width: 95%;
+
+        div {
+            font-size: 80px
+        }
+
+    }
+`
+
+export const BackBtnStyle = styled.div`
+    text-align: right;
+
+    svg {
+        color: #696969;
+        font-size: 35px;
+
+        &:hover {
+            color: #808080;
+        }
+    }
+    @media (max-width: 450px) {
+      margin-right: 7%;  
+    }
+`

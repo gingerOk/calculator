@@ -1,3 +1,5 @@
+import {PadStyle} from './styles/Style'
+
 const PadBody = (props) => {
 
   const {
@@ -11,7 +13,7 @@ const PadBody = (props) => {
   } = props.value;
 
   return (
-    <div className="calcForm">
+    <PadStyle>
       <button
         data-type="clear"
         onClick={() => clearValue()}
@@ -173,7 +175,7 @@ const PadBody = (props) => {
       >
         =
       </button>
-    </div>
+    </PadStyle>
   );
 };
 

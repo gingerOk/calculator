@@ -1,8 +1,9 @@
+import { Display } from "./styles/Style";
 const DisplayBody = ({ handleSetDisplay }) => {
   return (
-    <div className="display">
+    <Display>
       <div>{handleSetDisplay()}</div>
-    </div>
+    </Display>
   );
 };
 
