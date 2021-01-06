@@ -1,10 +1,11 @@
-import CalculatorBody from './components/CalculatorBody'
+import CalculatorBody from "./components/CalculatorBody";
+import { FunctionsProvider } from "./components/FunctionsContext";
 
 function App() {
   return (
-   <>
-   <CalculatorBody />
-   </>
+    <FunctionsProvider>
+      <CalculatorBody />
+    </FunctionsProvider>
   );
 }
 

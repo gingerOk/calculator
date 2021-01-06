@@ -1,13 +1,11 @@
 import { BsBackspaceFill } from "react-icons/bs";
-import {BackBtnStyle} from './styles/Style'
-const BackBtn = ({ handleBackBtn }) => {
-  return (
-    <BackBtnStyle>
-    <div onClick={() => handleBackBtn()}>
+import { BackBtnStyle } from "./styles/Style";
+const BackBtn = ({ handleClick }) => (
+  <BackBtnStyle>
+    <div onClick={handleClick}>
       <BsBackspaceFill />
     </div>
-    </BackBtnStyle>
-  );
-};
+  </BackBtnStyle>
+);
 
 export default BackBtn;

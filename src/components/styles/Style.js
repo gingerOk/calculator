@@ -46,7 +46,7 @@ export const PadStyle = styled.div `
 
         }
 
-    .item-0 {
+    button:nth-child(17) {
         grid-column: 1/ span 2;
         border-radius: 25px;
 
@@ -55,7 +55,7 @@ export const PadStyle = styled.div `
         }
     }
 
-    .central-block{
+    button {
         background-color: #696969;
 
         &:hover {
@@ -63,7 +63,7 @@ export const PadStyle = styled.div `
         }
     }
 
-    .right-block {
+    button:nth-child(4n+0), button:last-child  {
         background-color: #ff8800;
 
         &:hover {
@@ -72,7 +72,7 @@ export const PadStyle = styled.div `
         }
     }
 
-    .top-block{
+    button:first-child, button:nth-child(2), button:nth-child(3){
         background-color: #adadad;
 
         &:hover {
